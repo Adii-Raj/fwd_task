@@ -1,0 +1,65 @@
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f3f3f3;
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            transition: 0.3s all;
+        }
+        img.corner {
+            position: absolute;
+            width: 250px;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 8px;
+        }
+
+        .top-left {
+            top: 10px;
+            left: 10px;
+        }
+
+        .top-right {
+            top: 10px;
+            right: 10px;
+        }
+
+        .bottom-left {
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .bottom-right {
+            bottom: 10px;
+            right: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40vh;
+            font-family: Arial, sans-serif;
+        }
+
+        img:hover{
+            box-shadow: -10px 10px 12px rgb(0, 0, 0,50%);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <img src="images/img1.png" class="corner top-left">
+    <img src="images/img2.jpg" class="corner top-right">
+    <img src="images/img3.png" class="corner bottom-left">
+    <img src="images/img4.png" class="corner bottom-right">
+
+    <h1>This is an example of images in corner</h1>
+</body>
+</html>

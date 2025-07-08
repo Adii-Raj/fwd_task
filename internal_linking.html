@@ -1,0 +1,80 @@
+<html>
+    <head>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background: linear-gradient(45deg, rgb(160, 160, 160),rgb(170, 170, 170)
+            , rgb(187, 187, 187),rgb(202, 202, 202),rgb(235, 235, 235),white, white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .image-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 100%;
+            flex-wrap: wrap;
+            gap: 100px;
+        }
+        img{
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 1%;
+            max-width: 350px;
+            max-height: 350px;
+            transition: 0.3s all;
+        }
+        img:hover{
+            transform: scale(1.05);
+            box-shadow: -10px 10px 8px rgb(46, 46, 46,40%);
+        }
+        h1{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+        }
+
+
+        .hanger{
+            position: fixed;
+            top: 40%;  
+            right: 20px; 
+            background: #ffffff;
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 999;
+            transition: 0.4s all;
+        }
+        .hanger:hover{
+            box-shadow: -10px 10px 12px rgba(0,0,0,0.3);
+        }
+
+    </style>
+    </head>
+    <body>
+        <h1>Internal Linking Showcase</h1>
+        <div class="image-container">
+            <img class="i1" id="first" src="images/img1.png">
+            <img class="i2" id="second" src="images/img2.jpg">
+            <img class="i3" id="third" src="images/img3.png">
+            <img class="i4" id="fourth" src="images/img4.png">
+            <img class="i5" id="fifth" src="images/img5.jpg">
+            <img class="i6" id="sixth" src="images/img6.jpg">
+        </div>
+        <div class="hanger">
+            <h1>Internal Linking</h1>
+            <ul>
+                <li><a href="#first">First Image</a> </li>
+                <li><a href="#second">Second Image</a> </li>
+                <li><a href="#third">Third Image</a> </li>
+                <li><a href="#fourth">Fourth Image</a> </li>
+                <li><a href="#fifth">Fifth Image</a> </li>
+                <li><a href="#sixth">Sixth Image</a> </li>
+            </ul>
+        </div>
+    </body>
+</html>

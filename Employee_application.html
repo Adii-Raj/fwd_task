@@ -1,0 +1,105 @@
+<head>
+    <style>
+        h2{
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(233, 159, 255,30%);
+        }
+        .form-container {
+            background-color: rgb(233, 159, 255,70%);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: rgb(195, 0, 255);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .section-title {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Employee Application Form</h2>
+        <form id="applicationForm">
+            <div class="section-title">Personal Information</div>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="4" placeholder="Enter your address" required></textarea>
+
+            <div class="section-title">Education</div>
+            <label for="highestDegree">Highest Degree</label>
+            <select id="highestDegree" name="highestDegree" required>
+                <option value="" disabled selected>Select your highest degree</option>
+                <option value="highSchool">12th Pass</option>
+                <option value="bachelor">B.Tech</option>
+                <option value="master">M.Tech</option>
+                <option value="phd">Ph.D.</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="institution">Institution Name</label>
+            <input type="text" id="institution" name="institution" placeholder="Enter institution name" required>
+
+            <label for="gradYear">Year of Graduation</label>
+            <input type="number" id="gradYear" name="gradYear" min="1980" max="2025" placeholder="Enter graduation year" required>
+
+            <div class="section-title">Work Experience</div>
+            <label for="recentJob">Most Recent Job Title</label>
+            <input type="text" id="recentJob" name="recentJob" placeholder="Enter job title" required>
+
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="company" placeholder="Enter company name" required>
+
+            <label for="yearsWorked">Years Worked</label>
+            <input type="number" id="yearsWorked" name="yearsWorked" min="0" max="50" placeholder="Enter years worked" required>
+
+            <div class="section-title">Additional Information</div>
+            <label for="skills">Key Skills</label>
+            <textarea id="skills" name="skills" rows="4" placeholder="List your key skills (e.g., Python, Project Management)"></textarea>
+
+            <label for="position">Position Applying For</label>
+            <input type="text" id="position" name="position" placeholder="Enter position title" required>
+
+            <button type="button" onclick="submitApplication()">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>

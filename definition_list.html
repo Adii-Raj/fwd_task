@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .definition{
+                border: 2px solid;
+                padding: 20px;
+                border-radius:10px;
+                background-color:blanchedalmond;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: 0.4s ease-in-out;
+            }
+            .definition:hover{
+                box-shadow: -10px 10px 10px 1px rgb(12,12,12);
+                border-color: blanchedalmond;
+                transform:scale(1.01);
+            }
+            dt{
+                font-family:'Times New Roman', Times, serif;
+                font-weight:bolder;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            dd{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="definition">
+            <h1>Definition List</h1>
+            <dl>
+                <dt>NVIDIA RTX 5090</dt>
+                <dd>A high-end GPU with 21,760 CUDA cores and 32GB GDDR7 memory, ideal for 4K gaming and AI tasks.</dd>
+                <dt>Intel Core Ultra 9 285K</dt>
+                <dd>A top-tier CPU from Intel’s Arrow Lake series, optimized for gaming and productivity with PCIe 5.0 support.</dd>
+                <dt>Logitech G Pro X Superlight 2</dt>
+                <dd>A lightweight wireless gaming mouse with a 32,000 DPI sensor, perfect for competitive gaming.</dd>
+                <dt>Logitech G915 X LIGHTSPEED</dt>
+                <dd>A low-profile wireless keyboard with customizable switches and an 8,000 Hz polling rate.</dd>
+            </dl>
+        </div>
+    </body>
+</html>
